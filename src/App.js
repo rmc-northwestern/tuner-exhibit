@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Iframe from 'react-iframe'
 
@@ -13,26 +12,26 @@ class App extends Component {
     }
   }
   render(){
-    if (this.state.step == 0) {
+    if (this.state.step === 0) {
       return (
         <div className="App">
           <header className="App-header">
-            <h2>
+            <h1>
               STRING FREQUENCY
-            </h2>
+            </h1>
             <button onClick={()=>this.setState({step:1})}>begin</button>
           </header>
         </div>
       );
     }
 
-    if (this.state.step == 1) {
+    if (this.state.step === 1) {
       return (
         <div className="App">
           <header className="App-header">
-            <h2>
+            <h1>
               INTRODUCTION
-            </h2>
+            </h1>
             <p><i>Let’s begin by figuring out what “<b>frequency</b>” means in music:</i></p>
             <p>Each <b>note</b> on the musical scale is produced when an object vibrates at a particular speed.</p>
             <p>Faster vibrations create high notes, and slower vibrations create low notes.</p>
@@ -42,13 +41,13 @@ class App extends Component {
       );
     }
 
-    if (this.state.step == 2) {
+    if (this.state.step === 2) {
       return (
         <div className="App">
           <header className="App-header">
-            <h2>
+            <h1>
               STEP 1
-            </h2>
+            </h1>
             <p><i>Next, let’s figure out what note our string makes all by itself.</i></p>
             <p><b>Pluck the string and see what the tuner reads!</b></p>
             <div style={{transform:"scale(0.6)", margin:"-70px"}}>
@@ -67,13 +66,13 @@ class App extends Component {
       );
     }
 
-    if (this.state.step == 3) {
+    if (this.state.step === 3) {
       return (
         <div className="App">
           <header className="App-header">
-            <h2>
+            <h1>
               STEP 2
-            </h2>
+            </h1>
             <p><i>Next, what happens if we only vibrate half of the string?</i></p>
             <p><b>Place the fret in the middle of the string and pluck again!</b></p>
             <div style={{transform:"scale(0.6)", margin:"-70px"}}>
@@ -92,13 +91,13 @@ class App extends Component {
       );
     }
 
-    if (this.state.step == 4) {
+    if (this.state.step === 4) {
       return (
         <div className="App">
           <header className="App-header">
-            <h2>
+            <h1>
               STEP 2
-            </h2>
+            </h1>
             <p><i>Very cool! When the length of the string was cut in half, the frequency doubled!</i></p>
             <p><b>See what other notes you can make using the fret!</b></p>
             <div style={{transform:"scale(0.6)", margin:"-70px"}}>
@@ -117,13 +116,13 @@ class App extends Component {
       );
     }
 
-    if (this.state.step == 5) {
+    if (this.state.step === 5) {
       return (
         <div className="App">
           <header className="App-header">
-            <h2>
+            <h1>
             WHAT WE LEARNED
-            </h2>
+            </h1>
             <p><i>- When objects vibrate, they create sounds at specific frequencies</i></p>
             <p><i>- Each note in the musical scale relates to a specific frequency</i></p>
             <p><i>- Changing the size and shape of an object changes the frequncy at which it vibrates</i></p>
