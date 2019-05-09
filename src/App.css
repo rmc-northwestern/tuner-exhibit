@@ -40,9 +40,11 @@ button{
   border-radius: 30px;
   border: 0;
   animation: pulse .8s infinite;
+  cursor: pointer;
+  transition: all .2s;
 }
-.pulse:hover {
-  animation: none;
+button:hover {
+  transform: scale(1.05);
 }
 
 @-webkit-keyframes pulse {
